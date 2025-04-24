@@ -9,8 +9,9 @@ const Port = 5000;
 app.use(cors());
 app.use(express.json()); // parse JSON body
 
-// ✅ Test Route
+
 app.use('/api', authRouter)
+
 // ✅ Start the server
 app.listen(Port, () => {
   console.log(`🚀 Server running on http://localhost:${Port}`);
