@@ -1,7 +1,9 @@
 import EmptyButton from "./EmptyButton";
 import FilledButton from "./FilledButton";
+import { useNavigate } from 'react-router-dom';
 
 function HomeComponent(){
+    const navigate = useNavigate();
     return(
         <div>
             <nav className="text-[white] grid grid-cols-2">
@@ -38,6 +40,7 @@ function HomeComponent(){
                     <div>
                         <FilledButton 
                             text={"Get Started"}
+                            onClick={() => navigate('/signup')}
 
                         />
                     </div>
